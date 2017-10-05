@@ -11,6 +11,7 @@ header {
     width:100%;
     background-color: #556;
     align-items: center;
+    z-index: 9999;
 }
 header div.brand{
     padding: 10px;
@@ -20,6 +21,7 @@ header div.brand{
 header nav {
     flex-grow: 1;
     margin-left: 20px;
+    width: 100%;
 }
 
 header nav ul {
@@ -40,4 +42,23 @@ header nav ul li a:hover{
     background-color: #Ec6;
     color: black;
    
+}
+
+@media  (max-width:500px) {
+    header {
+        background-color: pink;
+        flex-direction: column;
+    }
+    header nav {
+        margin-left: 0;
+    }
+    header nav ul  {
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+ 
+    }
+
 }
