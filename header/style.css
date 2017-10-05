@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    width:100%;
+    background-color: #556;
+    align-items: center;
+}
+header div.brand{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+header nav {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a{
+    text-decoration: none;
+     padding: 10px;
+     display: block;
+     height: 100%;
+     color: white;
+}
+header nav ul li a:hover{
+    background-color: #Ec6;
+    color: black;
+   
+}
