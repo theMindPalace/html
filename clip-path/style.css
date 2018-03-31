@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #E0E0E0;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(136, 85, 255, 0.63),  rgba(245, 5, 61, 0.53)), url(https://images.unsplash.com/photo-1502818649806-3460a6c6c293?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=ef87965fc9f4fc97d20bdea170376380);
+    min-height: 95vh;
+    clip-path: polygon(50% 0%, 75% 25%, 75% 75%, 50% 100%, 25% 75%, 25% 25%);
+}
