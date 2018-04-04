@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-color: azure;
+    color: #e0e8d5;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    background-color: rgb(34, 34, 34);
+    min-height: 100vh;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1474905187624-b3deaf7aa4c2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=4d0f4b6869c2f565a0048452bc7dfff1');
+    background-position: top;
+    background-size: cover;
+}
+
+.hero-box {
+    background-color: rgba(41, 41, 38, 0.41);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 10px;
+    animation: fadeIn 0.9s ease-in-out;
+    border-radius: 3px;
+    width:60%;
+}
+
+.hero-box h1 {
+    margin-bottom: 15px;
+    font-size: 200%;
+    letter-spacing: 2px;
+}
+
+.hero-buttons {
+    margin-top:25px;
+    text-align: center;
+}
+
+.btn {
+    padding: 5px 25px;
+    background-color: #f56;
+    border: 1px solid #f56;
+    font-size: 120%;
+    border-radius: 3px;
+    color: azure;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    .hero-box {
+        width: 80%;
+    }
+    .btn {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*Animations*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
