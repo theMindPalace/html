@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offcanvas Navigation</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+    }
+    body, .container, .main-content {
+        min-height: 100vh;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        transition:  transform 0.3s ease-in;
+    }
+    .container.show-nav {
+        transform: translateX(250px);
+    }
+    
+    
+    .side-nav {
+        position: absolute;
+        width: 250px;
+        background-color: rgba(74, 28, 136, 0.86);
+        min-height: 100vh;
+        color: beige;
+        transform: translateX(-250px);
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+/*    Additional Styles */
+    
+    .btn {
+        padding: 10px;
+        background-color: #d1d1d1;
+        border:1px solid  #cfcfcf;
+    }
+    .fab {
+        border-radius: 50%;
+        width: 50px;
+        font-size: 150%;
+    }
+    
+    h1 {
+        margin: 15px 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        
+        <nav class="side-nav">
+            Side Nave
+        </nav>
+        
+        <main class="main-content">
+            <button id="toggle-btn" class="btn fab">&equiv;</button>
+            <h1>Off Canvas Navigation </h1>
+            <p>Offcanvas navigation by Sarath</p>
+        </main>
+        
+    </div>
+<script>
+    const container = document.querySelector('.container');
+    
+    const toggleBtn = document.querySelector('#toggle-btn');
+    
+    toggleBtn.addEventListener('click', function() {
+        
+        
+        container.classList.toggle('show-nav')
+    })
+    
+    
+</script>
+</body>
+</html>
