@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+}
+.container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*Buttons */
+
+$lightWhite:  #dae1e3;
+
+$primaryColor: #456bd9;
+
+$successColor: #35a010;
+
+$dangerColor : #d40101;
+
+$colorLightenAmount: 3%;
+$darkenAmount: 8%;
+
+$textWhiteColor: #fff;
+$textDarkColor: #292929;
+
+.btn {
+    padding: 5px 10px;
+    background-color: $lightWhite;
+    border:  1px solid $lightWhite;
+    border-radius: 3px;
+    color: $textDarkColor;
+    display: inline-block;
+    
+    /* Primary*/
+    &.btn-primary {
+        background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        color: $textWhiteColor;
+
+        &:hover {
+            background-color: lighten($primaryColor, $colorLightenAmount);
+        }
+
+        &:active {
+            background-color: darken($primaryColor, $darkenAmount);
+        }
+    }
+    
+    /* Success */
+    
+    &.btn-success {
+        background-color: $successColor;
+        border: 1px solid $successColor;;
+        color: $textWhiteColor;
+
+        &:hover {
+            background-color: lighten($successColor, $colorLightenAmount);
+        }
+
+        &:active {
+             background-color: darken($successColor, $darkenAmount);
+        }
+    }
+    
+    &.btn-danger {
+        background-color: $dangerColor;
+        border: 1px solid $dangerColor;
+        color: $textWhiteColor;
+
+        &:hover {
+
+             background-color: lighten($dangerColor, $colorLightenAmount);
+
+        }
+
+        &:active {
+            background-color:  darken($dangerColor, $darkenAmount);
+        }
+    }
+    
+    /*Sizing*/ 
+    &.btn-big {
+        font-size: 125%;
+        padding: 10px 15px;
+    }
+    
+    &.btn-skew {
+        transform: skew(-12deg, 0deg);
+    }
+}
+
+
+
+
+
+
