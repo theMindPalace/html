@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    background-color: azure;
+    min-height: 100vh;
+    transition: transform 0.32s ease-in;
+}
+
+.wrapper.show-nav {
+    transform: translateX(350px);
+}
+
+.side-bar {
+    position: absolute;
+    width: 350px;
+    background-color: #673AB7;
+    height: 100%;
+    min-height: 100vh;
+    transform:  translateX(-350px);
+    padding: 20px 5px 5px 5px;
+    text-align: center; 
+    overflow-y: auto;
+}
+/*Custom Scrollbars*/
+.nice-scroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ddd;
+}
+
+.nice-scroll::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.nice-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #ddd;
+}
+.main-content {
+    padding: 20px;
+}
+
+.toggle-container {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+/*The Grid*/ 
+
+.row {
+    overflow: auto;
+    width: 100%;
+}
+
+.col-4 {
+    float: left;
+    width: 24.2%;
+    background-color: aquamarine;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.gd {
+    background: #c0392b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/*Left nav*/ 
+a:link,a:visited {
+    text-decoration: none;
+}
+.nav-channels {
+    display: block;
+    list-style: none;
+    text-align: left;
+}
+.nav-channels li {
+    display: block;
+   
+    margin-bottom: 5px;
+}
+.nav-channels li:hover {
+}
+.nav-channels li:last-child {
+    margin-bottom: 0px;
+}
+.nav-channels li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #eee;
+     background-color: #4A148C;
+    width: 100%;
+    border-radius: 5px;
+
+
+
+}
